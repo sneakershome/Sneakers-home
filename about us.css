@@ -1,0 +1,67 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(bright-regular-1.ttf);
+ }
+ @font-face {
+    font-family: cinzel;
+    src: url(Cinzel-Bold.otf);
+ }
+ 
+    header { background-color: #e1ddd3;
+     padding: 5px;
+      
+   }
+        
+ 
+ * {
+    font-family: myFirstFont;
+ }
+ body {
+     background-image: url(plantilla.png);
+     background-repeat: no-repeat;
+     background-position: right top;
+     margin-right: 15px;
+     background-attachment: fixed;
+     background-size: cover;
+ }
+ ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #a4b2b0;
+ }
+ 
+ li {
+   float: left; 
+ }
+ 
+ li a {
+   display: block;
+   color: rgb(0, 0, 0);
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+ }
+ 
+ li a:hover:not(.active) {
+   background-color: #eeece5;
+ }
+ 
+ .active {
+   background-color: #e1ddd3;
+ }
+ input[type=text] {
+   width: 30%;
+   box-sizing: border-box;
+   border: 0px solid #ccc;
+   border-radius: 5px;
+   font-size: 16px;
+   background-color: white;
+   background-image: url(search\ symbol.png);
+   background-position: 10px 8px; 
+   background-size: 5%;
+   background-repeat: no-repeat;
+   padding: 10px 20px 12px 40px;
+   margin-left: 70%;
+ }

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<style>
+body{
+background-color: #a4b2b0;
+}
+@font-face {
+   font-family: myFirstFont;
+   src: url(bright-regular-1.ttf);
+}
+@font-face {
+   font-family: cinzel;
+   src: url(Cinzel-Bold.otf);
+}
+
+   header { background-color: #e1ddd3;
+    padding: 5px;
+     
+  }
+       
+
+* {
+   font-family: myFirstFont;
+}
+body {
+    background-image: url(plantilla.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-right: 15px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #a4b2b0;
+}
+
+li {
+  float: left; 
+}
+
+li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #eeece5;
+}
+
+.active {
+  background-color: #e1ddd3;
+}
+    </style>
+    </head>
+    <header>
+    <a href="Log In.html" style="float:right"><img src="login.png" width="30px" height="30px"style="margin-top: 60%;"></a>
+    
+    <a href="shopping cart.html" style="float:right;margin-right: 1%;"><img src="shopping-cart.png" width="30px" height="30px"style="margin-top: 60%;"></a>
+        <h1 style="font-family:cinzel;"> Sneakers home
+             </h1>
+        <ul class="menu">
+            <ul class="active">
+            <li> <a href="about us.html"> About us </a></li>
+            <li> <a href="home.html"> Home </a></li>
+            <li> <a href="Converse.html"> Converse </a></li>
+            <li> <a href="Nike.html"> Nike </a></li>
+            <li> <a href="Vans.html"> Vans </a></li>
+        </ul>
+        </ul>
+      <form>
+       <input style="  width: 30%;
+       box-sizing: border-box;
+       border: 0px solid #ccc;
+       border-radius: 5px;
+       font-size: 16px;
+       background-color: white;
+       background-image: url(search\ symbol.png);
+       background-position: 10px 8px; 
+       background-size: 5%;
+       background-repeat: no-repeat;
+       padding: 10px 20px 12px 40px;
+       margin-left: 70%;"
+       type="text" name="search" placeholder="Search..">
+      </form>
+    </header>
+<p>
+<div id="login-form">
+    <label for="username">username:</label>
+    <input type="text" id="username" name="username"><br>
+    <br>
+
+    <label for="password">password:</label>
+    <input type="password" id="password" name="password"><br>
+    <br>
+    <button onclick="login()">login</button>
+    <button onclick="createSession()">create session</button>
+  </div>
+  
+  <div id="logged-in" style="display: none;">
+    <p>Bienvenido, <span id="username-display"></span>!</p>
+    <button onclick="logout()">Close session</button>
+  </div> 
+</p>
+<footer> 
+    <ul>
+      <li> <a href="contact.html"> Contact </a></li>
+    </ul>
+    </footer>
+</html> 
